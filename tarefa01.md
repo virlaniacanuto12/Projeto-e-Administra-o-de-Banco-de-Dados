@@ -1,3 +1,10 @@
+# Questões resolvidas
+
+[Questão 01](https://github.com/virlaniacanuto12/Projeto-e-Administra-o-de-Banco-de-Dados/blob/main/tarefa01-q1.sql)
+
+
+
+
 # Explicação sobre JOINs e Window Functions no PostgreSQL
 
 ## JOINs
