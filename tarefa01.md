@@ -17,6 +17,7 @@ SELECT *
 FROM produtos
 NATURAL JOIN categorias
 WHERE preco > 100;
+```
 
 ### CROSS JOIN (Produto Cartesiano)
 
@@ -39,6 +40,7 @@ SELECT f.funcionario, d.departamento, p.projeto
 FROM funcionarios f
 CROSS JOIN departamentos d
 CROSS JOIN projetos p;
+```
 
 ### Window Functions no PostgreSQL
 
@@ -68,3 +70,4 @@ FROM sales;
 SELECT name, department, salary,
        AVG(salary) OVER (PARTITION BY department) as avg_dept_salary
 FROM employees;
+```
