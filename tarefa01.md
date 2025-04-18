@@ -2,6 +2,14 @@
 
 [Questão 01](https://github.com/virlaniacanuto12/Projeto-e-Administra-o-de-Banco-de-Dados/blob/main/tarefa01-q1.sql)
 
+[Questão 04](hhttps://github.com/virlaniacanuto12/Projeto-e-Administra-o-de-Banco-de-Dados/blob/main/tarefa01-q4.sql)
+
+[Questão 07](https://github.com/virlaniacanuto12/Projeto-e-Administra-o-de-Banco-de-Dados/blob/main/tarefa01-q7.sql)
+
+[Questão 10](https://github.com/virlaniacanuto12/Projeto-e-Administra-o-de-Banco-de-Dados/blob/main/tarefa01-q10.sql)
+
+[Questão 13](https://github.com/virlaniacanuto12/Projeto-e-Administra-o-de-Banco-de-Dados/blob/main/tarefa01-q13.sql)
+
 
 
 
