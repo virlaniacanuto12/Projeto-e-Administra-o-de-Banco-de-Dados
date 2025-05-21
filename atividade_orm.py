@@ -72,3 +72,37 @@ with connection.schema_editor() as schema_editor:
     schema_editor.create_model(Projeto)
     schema_editor.create_model(Atividade)
 
+
+# A. Inserir uma atividade em algum projeto
+
+# Criar departamento e funcionário primeiro (são FK)
+depto = Departamento.objects.create(
+    nome="TI",
+    sigla="DPT-TI",
+    descricao="Departamento de Tecnologia da Informação"
+)
+
+gerente = Funcionario.objects.create(
+    nome="João Silva",
+    sexo="M",
+    dt_nasc="1980-01-15",
+    salario=10000.00,
+    depto=depto
+)
+
+projeto = Projeto.objects.create(
+    nome="Sistema de Gestão",
+    descricao="Desenvolvimento de um ERP",
+    responsavel=gerente,
+    depto=depto,
+    data_inicio="2023-10-01",
+    data_fim="2023-12-31"
+)
+
+atividade = Atividade.objects.create(
+    descricao="Desenvolver módulo de autenticação",
+    projeto=projeto,
+    data_inicio="2023-10-10",
+    data_fim="2023-10-20"
+)
+print("Atividade criada:", atividade.descricao)
