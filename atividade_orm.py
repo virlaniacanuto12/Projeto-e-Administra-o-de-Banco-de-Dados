@@ -106,3 +106,24 @@ atividade = Atividade.objects.create(
     data_fim="2023-10-20"
 )
 print("Atividade criada:", atividade.descricao)
+
+# B. Atualizar o líder de um projeto
+novo_lider = Funcionario.objects.create(
+    nome="Maria Souza",
+    sexo="F",
+    dt_nasc="1990-05-20",
+    salario=9500.00,
+    depto=depto
+)
+
+projeto.responsavel = novo_lider
+projeto.save()
+print("Líder do projeto atualizado!")
+
+# C. Listar todos os projetos e suas atividades
+projetos = Projeto.objects.all()
+for p in projetos:
+    print(f"Projeto: {p.nome} (Responsável: {p.responsavel.nome})")
+    atividades = Atividade.objects.filter(projeto=p)
+    for a in atividades:
+        print(f"  - Atividade: {a.descricao} ({a.data_inicio} a {a.data_fim})")
